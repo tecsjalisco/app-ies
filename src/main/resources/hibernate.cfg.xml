@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">org.mariadb.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mariadb://10.13.1.62:3306/sicyt</property>
+    <property name="hibernate.connection.username">gabo</property>
+    <property name="hibernate.connection.password">14-adq-050</property>
+    <!--<property name="hibernate.show_sql">true</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.connection.provider_class">org.hibernate.c3p0.internal.C3P0ConnectionProvider</property>
+    <property name="hibernate.c3p0.min_size">3</property>
+    <property name="hibernate.c3p0.max_size">20</property>
+    <property name="hibernate.c3p0.acquire_increment">3</property>
+    <property name="hibernate.c3p0.idle_test_period">240</property>
+    <property name="hibernate.c3p0.max_statements">50</property>
+    <property name="hibernate.c3p0.timeout">200</property>-->
+    
+    <mapping class="mx.core.load.db.Mode"/>
+    <mapping class="mx.core.load.db.Soc"/>
+    <mapping class="mx.core.load.db.Level"/>
+    <mapping class="mx.core.load.db.State"/>
+    <mapping class="mx.core.org.db.Center"/>
+    <mapping class="mx.core.org.db.Position"/>
+    <mapping class="mx.core.prg.db.Program"/>
+    <mapping class="mx.core.prg.db.Reco"/>
+    <mapping class="mx.core.prg.db.Level"/>
+    <mapping class="mx.core.sec.db.Rol"/>
+    <mapping class="mx.core.sec.db.Account"/>
+    <mapping class="mx.core.usr.db.User"/>
+    <mapping class="mx.core.usr.db.Certificate"/>
+    
+    <mapping class="mx.core.doc.db.Doc"/>
+    <mapping class="mx.core.doc.db.Study"/>
+    <mapping class="mx.core.doc.db.Proto"/>
+    
+  </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,33 @@
+body, html {
+  height: 100%;
+}
+
+.login_img {
+  background-image: url("img/login.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login_outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80%;
+  width: 100%;
+}
+.login_middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+.login_panel {
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 1px 5px 10px 0px rgba(227,227,227,1);
+    -moz-box-shadow: 1px 5px 10px 0px rgba(227,227,227,1);
+    box-shadow: 1px 5px 10px 0px rgba(227,227,227,1);
+    height: 300px; width: 400px;
+    background-color: #ffffff;
+}

@@ -1,0 +1,93 @@
+package mx.core.doc.db;
+
+import mx.core.doc.xb.Center;
+import mx.core.doc.xb.Doc;
+import mx.core.doc.xb.Program;
+import mx.core.doc.xb.Resp;
+import mx.core.doc.xb.Student;
+import mx.core.doc.xb.Study;
+
+public class CadOrigen {
+    private String cad;
+    public CadOrigen(String code, Center center, Resp resp, Program program, Student student, Doc doc, Study study){
+        this.cad = "";
+        this.cad += "||1.0"; 
+        this.cad += "|";
+        this.cad +=  code;
+        this.cad += "|";        
+        this.cad += resp.getCurp(); 
+        this.cad += "|";        
+        this.cad += resp.getIdPosition();
+        this.cad += "|";        
+        this.cad += resp.getPosition();
+        this.cad += "|";        
+        this.cad += resp.getLevel();
+        this.cad += "|";        
+        this.cad += center.getCode();
+        this.cad += "|";        
+        this.cad += center.getName();
+        this.cad += "|";        
+        this.cad += program.getCode();
+        this.cad += "|";        
+        this.cad += program.getName();
+        this.cad += "|";        
+        this.cad += program.getStart();
+        this.cad += "|";        
+        this.cad += program.getEnd();
+        this.cad += "|";        
+        this.cad += program.getIdAuth();
+        this.cad += "|";        
+        this.cad += program.getAuth();
+        this.cad += "|";        
+        this.cad += program.getRvoe();
+        this.cad += "|";        
+        this.cad += student.getCurp();
+        this.cad += "|";        
+        this.cad += student.getName();
+        this.cad += "|";        
+        this.cad += student.getFirstName();
+        this.cad += "|";        
+        this.cad += student.getSecondName();
+        this.cad += "|";        
+        this.cad += student.getEmail();
+        this.cad += "|";        
+        this.cad += doc.getDate(); 
+        this.cad += "|";        
+        this.cad += doc.getIdMode();
+        this.cad += "|";        
+        this.cad += doc.getMode();
+        this.cad += "|";        
+        this.cad += doc.getDateExamPro()!=null?doc.getDateExamPro():"";
+        this.cad += "|";        
+        this.cad += doc.getDateExenPro()!=null?doc.getDateExenPro():"";
+        this.cad += "|";        
+        this.cad += doc.getSoc();
+        this.cad += "|";        
+        this.cad += doc.getIdLegalSoc(); 
+        this.cad += "|";        
+        this.cad += doc.getLegalSoc(); 
+        this.cad += "|";        
+        this.cad += doc.getIdState();
+        this.cad += "|";        
+        this.cad += doc.getState(); 
+        this.cad += "|";        
+        this.cad += study.getCenter();
+        this.cad += "|";        
+        this.cad += study.getIdLevel();
+        this.cad += "|";        
+        this.cad += study.getLevel();
+        this.cad += "|";        
+        this.cad += study.getIdState();
+        this.cad += "|";        
+        this.cad += study.getState();
+        this.cad += "|";        
+        this.cad += study.getStart();
+        this.cad += "|";        
+        this.cad += study.getEnd();
+        this.cad += "|";
+        this.cad += "||";  
+    }
+    public String parseString(){
+        return this.cad;
+    }
+}

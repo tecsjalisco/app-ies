@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'edcore_font';
+  src: url('../font/Helvetica/HelveticaLTStd-Obl.otf');
+}
+label{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 13px;
+}
+html, body {
+    font-family: Verdana, Geneva, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+}
+.main_ml { margin-left:  -4px }
+.button_ml { margin-left:  -20px }
+.foto_ml { margin-left:  -7px }
+
+.icon_file {
+    background-image: url(../img/icon/privilege16.png);
+}
+.icon_opened {
+    background-image: url(../img/icon/privilege16.png);
+}
+.icon_closed {
+    background-image: url(../img/icon/privilege16.png);
+}
+.icon_new {
+    background-image: url(../img/icon/new16.png);
+}
+.icon_edit {
+    background-image: url(../img/icon/edit16.png);
+}
+.icon_delete {
+    background-image: url(../img/icon/delete16.png);
+}
+.icon_see {
+    background-image: url(../img/icon/see16.png);
+}
+.icon_excel {
+    background-image: url(../img/icon/excel16.png);
+}
+.icon_pdf {
+    background-image: url(../img/icon/pdf16.png);
+}
+.icon_save {
+    background-image: url(../img/icon/save16.png);
+}
+.icon_refresh {
+    background-image: url(../img/icon/refresh16.png);
+}
+.icon_exit {
+    background-image: url(../img/icon/exit16.png);
+}
+
+.icon_openFolder {
+    background-image: url(../img/icon/folderOpen.gif);
+}
+.icon_closedFolder {
+    background-image: url(../img/icon/folderClosed.gif);
+}
+.icon_fileFolder {
+    background-image: url(../img/icon/folderOpen.gif);
+}
+
